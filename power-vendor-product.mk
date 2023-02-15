@@ -33,4 +33,6 @@ else ifeq ($(TARGET_BOARD_PLATFORM),sdm660)
 ifeq ($(TARGET_KERNEL_VERSION),4.19)
 PRODUCT_COPY_FILES += vendor/qcom/opensource/power/config/sdm660/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 endif
+else ifeq ($(TARGET_BOARD_PLATFORM),anorak)
+PRODUCT_COPY_FILES += vendor/qcom/opensource/power/config/anorak/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 endif
